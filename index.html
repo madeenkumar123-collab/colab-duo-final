@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Bike Dashboard</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Anton', sans-serif;
+      background: #111;
+      color: #eee;
+    }
+
+    header {
+      background: #222;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      border-bottom: 3px solid #444;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .bike-card {
+      background: #1a1a1a;
+      border: 2px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .bike-card:hover {
+      transform: scale(1.03);
+    }
+
+    .bike-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .bike-info {
+      padding: 1rem;
+    }
+
+    .bike-info h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.5rem;
+      color: #f39c12;
+    }
+
+    .bike-info p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>🌍 Global Bike Dashboard</header>
+  <main class="dashboard">
+    <div class="bike-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Yamaha_YZF-R1_2015.jpg" alt="Yamaha YZF-R1">
+      <div class="bike-info">
+        <h3>Yamaha YZF-R1</h3>
+        <p>A Japanese superbike known for its agile handling and powerful 998cc engine, offering a thrilling ride on both track and road.</p>
+      </div>
+    </div>
+    <div class="bike-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Ducati_Panigale_V4.jpg" alt="Ducati Panigale V4">
+      <div class="bike-info">
+        <h3>Ducati Panigale V4</h3>
+        <p>Italian engineering at its finest, featuring a 1103cc V4 engine that delivers exhilarating performance and cutting-edge technology.</p>
+      </div>
+    </div>
+    <div class="bike-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/BMW_S1000RR_2019.jpg" alt="BMW S1000RR">
+      <div class="bike-info">
+        <h3>BMW S1000RR</h3>
+        <p>A German masterpiece combining precision, power, and advanced electronics, making it a top choice for superbike enthusiasts.</p>
+      </div>
+    </div>
+    <div class="bike-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Kawasaki_Ninja_H2R.jpg" alt="Kawasaki Ninja H2R">
+      <div class="bike-info">
+        <h3>Kawasaki Ninja H2R</h3>
+        <p>This track-only beast boasts a supercharged 998cc engine, pushing boundaries with unmatched speed and aerodynamic design.</p>
+      </div>
+    </div>
+    <div class="bike-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Harley-Davidson_Fat_Boy.jpg" alt="Harley-Davidson Fat Boy">
+      <div class="bike-info">
+        <h3>Harley-Davidson Fat Boy</h3>
+        <p>An iconic American cruiser, the Fat Boy offers a blend of classic style and modern performance with its Milwaukee-Eight engine.</p>
+      </div>
+    </div>
+    <div class="bike-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Royal_Enfield_Interceptor_650.jpg" alt="Royal Enfield Interceptor 650">
+      <div class="bike-info">
+        <h3>Royal Enfield Interceptor 650</h3>
+        <p>Combining retro charm with contemporary engineering, this Indian twin-cylinder motorcycle is perfect for both city rides and highway cruises.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
